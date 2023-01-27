@@ -214,3 +214,47 @@ small {
     padding: 50px 0px 0px 0px;
 }
 
+
+
+/* about html/css */
+
+.works_grid{
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 3;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 0px 100px 0px 100px;
+    justify-content: center;
+}
+
+.works_grid img {
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+    width: auto;
+    margin: 0 auto;
+}
+
+.works_room8 h1, .works_playground h1, .works_personal h1 {
+    font-size: 35px;
+    text-align: auto;
+    padding: 0px 120px 0px 120px;
+}
+
+.works_room8 h2, .works_playground h2, .works_personal h2 {
+    font-size: 17px;
+    text-align: auto;
+    padding: 0px 120px 50px 120px;
+    text-decoration: underline;
+}
+
+.works_room8 p, .works_playground p, .works_personal p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 120px 0px 120px;
+}
+
+/* @media screen and (min-width: 800px) {
+
+} */
