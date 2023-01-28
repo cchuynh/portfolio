@@ -4,94 +4,99 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/icon.png">
-        <link href='https://fonts.googleapis.com/css?family=DMSeritDisplay' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Mukta' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=BebasNeue' rel='stylesheet'>
+        <!-- font links -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="/images/fake_img.jpeg">
     </head>
     <body>
-        <style>
-            body{
-                background-image: url(spacee.jpg);
-                background-size: cover;
-                background-repeat:   no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-            }
-        </style>
-        <!-- <div class="skip"><a href= '#main'>Skip to Main Content</a></div> -->
         <header>
-            <div class = "nav_container">
-                <img src = "images/logoex.png" width = 150px; alt = "logo" class = "logo">
-                <nav>
-                    <ul>
-                        <!-- <li><a href="index.html" class = "homepage"></a></li> -->
-                        <li><a href="work.html" class="here">work</a></li>
-                        <li><a href="skills.html" class="here">skills</a></li>
-                        <li><a href="about.html" class="about">about</a></li>
-                        <li><a href="resume.html" class = "resume">resume</a></li>
-                    </ul>
-                </nav>
-            </div>
+            
         </header>
         <main class="container" id="main">
             <div class = "hithere">
+                <div>
+                    <img class = "logoimg" src = "images/logoex.png" width = 150px; alt = "logo" class = "logo">
+                </div>
+                <div>
+                    <img class = "topimg" src = "images/room8-0.png" alt="frontlogo">
+                </div>
+                
                 <div class="hello_note"> 
-                    <h2>hello there! i'm</h2>
-                    <h1>cecilia huynh</h1>
+                    <h1>hey, i'm cecilia huynh</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#gotoworks" class="work"><span style="color: #60663d;"><span style  = "font-size: 25px;">&#9729;</span></span> Works</a></li>
+                            <li><a href="about.html" class="about"><span style="color: #60663d;"><span style  = "font-size: 25px;">&#x263B;</span></span> About</a></li>
+                            <li><a href="resume.html" class = "resume"><span style="color: #60663d;"><span style  = "font-size: 25px;">&#x2618;</span></span> Resume</a></li>
+                        </ul>
+                    </nav>
+                    <br>
                 </div>
             </div>
-            <div class ="shortintro" style="text-align: center;"><h2>i’m a ux design student at the university of michigan.<br>
-                <span style="color: #A26952;"><b>user interface</b></span>, <span style="color: #A26952;"><b>user experience</b></span>, and <span style="color: #A26952;"><b>everything human centered</b></span>.
-                </h2>
-                <small>rock n’ scroll &#x263A;</small><br>
-                <small>&#x2193; &#x2193; &#x2193;</small>
+            <div class ="introaboutme" style="text-align: center;"><h2>i’m a ux design student at the university of michigan.<br>
+                <span style="color: #60663d;"><b>user interface</b></span>, <span style="color: #60663d;"><b>user experience</b></span>, and <span style="color: #60663d;"><b>everything human centered</b></span>
+                    </h2>
+                    <br>
+                    <br>
+                    <br>
+                    <small>rock n’ scroll &#x263A;</small><br>
+                    <small>&#x2193; &#x2193; &#x2193;</small>
             </div>
 
-            <div class = "works-title">my work</div>
-
-            <div class = "indexworks_grid">
-                <div class = "index_room8">
-                    <a href="room8.html" class="room8-html">
-                    <img src = "images/casestudyex.png" width="350" alt="frontlogo">
-                    <div class="bottom-left">ui/ux design</div>
-                    <h1>Room8</h1>
-                    <h2>view case study &#x2192;</h2>
-                    </a>
+            
+            <section id = "gotoworks">
+                <div class = "indexworks_grid">
+                    <div class = "index_room8">
+                        <a href="room8.html" class="room8-html">
+                        <img src = "images/room8-0.png" alt="frontlogo">
+                        <div class="bottom-left">TEAM PROJECT | UI/UX DESIGN
+                            <h2>Room8</h2>
+                            Cultivating a hub for ideal housing & roommate search while at U-M
+                            <h3>view case study &#x2192;</h3>
+                        </a></div>
+                    </div>
+                    <div class = "index_playground">
+                        <a href="playground.html" class="playground-html">
+                        <img src = "images/room8-0.png" alt="frontlogo">
+                        <div class="bottom-left">SOLO PROJECT | GRAPHIC DESIGN
+                            <h2>Portfolio Playground</h2>
+                            Improving my graphic design skills with an emphasis on accessibility and empathy
+                            <h3>view case study &#x2192;</h3>
+                        </a></div>
+                    </div>
+                    <div class = "index_personal">
+                        <a href="personal.html" class="personal-html">
+                        <img src = "images/room8-0.png" alt="frontlogo">
+                        <div class="bottom-left">SOLO PROJECT | WEB DESIGN
+                        <h2>Imagining a Personal Brand</h2>
+                        Reinventing online portfolio through application of newfound skills and emerging trends
+                        <h3>view case study &#x2192;</h3>
+                        </a></div>
+                    </div>
                 </div>
-                <div class = "index_playground">
-                    <img src = "images/casestudyex.png" width="350" alt="frontlogo">
-                    <div class="bottom-left">graphic design</div>
-                    <h1>Portfolio Playground</h1>
-                    <h2>view case study &#x2192;</h2>
-                </div>
-                <div class = "index_personal">
-                    <a href="personal.html" class="room8-html">
-                    <img src = "images/casestudyex.png" width="350" alt="frontlogo">
-                    <div class="bottom-left">web design</div>
-                    <h1>Imagining a Personal Brand</h1>
-                    <h2>view case study &#x2192;</h2>
-                    </a>
-                </div>
-            </div>
-            <br> 
+            </section>
         </main>
         <footer>
-            <h1>thanks for stopping by!</h1>
+            <h1>Thanks for stopping by!</h1>
             <div class = "footer_grid">
                 <div class = "leftfooter">
-                    <p>
-                        don't be shy! <br>
-                        explore work <br>
-                        get to know me <br>
-                        view resume <br><br>
-                        made with love, care, and a fiery macbook by cecilia huynh
-                        </p>
+                    <p>don't be shy! </p>
+                    <p><a href="#gotoworks"><span style="color: #F9F2EE;"></span>explore work</a></p>
+                    <p><a href="about.html"><span style="color: #F9F2EE;"></span>get to know me</a></p>
+                    <p><a href="resume.html"><span style="color: #F9F2EE;"></span>view resume</a></p>
+                    <p class = "madefrom">made with from scratch love & care by cecilia huynh</p>
                 </div>
                 <div class = "rightfooter">
-                    <p>
+                    <p class = "letsconnect">
                         let's connect!<br>
                         <img src = "images/linkedinlogo.png" width="20" alt="frontlogo">
                         <img src = "images/emaillogo.png" width="20" alt="frontlogo">
