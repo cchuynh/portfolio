@@ -85,8 +85,8 @@ nav a:hover {
     font-weight: 500;
 
     /* to change */
-    font-size: 111px;
-    line-height: 110px;
+    font-size: 90px;
+    line-height: 80px;
     padding-left: 200px
 
 }
@@ -124,14 +124,15 @@ nav a:hover {
     font-weight: 300;
 
     /* to change */
-    letter-spacing: 1px;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 50px;
 }
 
 small {
-    font-size: 20px;
     font-weight: 400;
+
+    /* to change */
+    font-size: 20px;
 }
 
 /* works */
@@ -140,9 +141,12 @@ small {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
-    padding: 25px 50px 25px 50px;
     column-gap: 50px;
     color: #363734;
+    border: red solid 5px;
+
+    /* to change */
+    padding: 25px 200px 25px 200px;
 }
 
 .index_room8 {
