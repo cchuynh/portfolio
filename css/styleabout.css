@@ -1,84 +1,105 @@
 body{
-    /* #FBF7EF */
-    font-family: DMSerifDisplay;
-    font-weight: bold;
-    color: #60524A;
+    background-color: rgb(249, 242, 238);
+    color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body style {
-    background-image: url(spacee.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 40px 10px 0px 10px;
 }
 
-
-/* NAVIGATION MENU STYLING */
-
-.nav_container {
-    width: 80%;
-    margin: 0 auto;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-header::after {
-    content: '';
-    display: table;
-    clear: both;
+.about-grid img {
+    max-width: 50%;
+    height: auto;
+    float: right;
+    padding-right: 50px;
 }
 
-.logo {
-    float: left;
+.container p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
+}
+
+.professional-intro h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0px 10px 0px 10px;
+}
+
+.professional-intro p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about-fun h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+}
+
+.about-imgs img {
+    max-width: 90%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 20px;
 }
 
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 35px;
-
-    position: relative;
-    font-family: Mukta;
-}
-
-nav a {
-    color: #fff3dc;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-nav a:hover {
-    color: #363734;
+.about-imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 /* FOOTER STYLING */
 
 footer {
-    /* background-color: rgba(23, 15, 10, 1); */
-    font-family: Mukta;
+    border: #363734 solid 1px;
+    position:relative;
+    bottom: 0;
+    padding: 20px 0px 20px 0px;
+    background-color: #363734;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
 }
 
 footer h1 {
-    padding: 10px 100px 0px 100px;
+    margin: 0;
+    padding: 0px 50px 0px 50px;
     color: #dce1bd;
-    font-size: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 footer p {
-    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 12px;
+    line-height: 5px;
+    color: #F9F2EE;
+}
+
+.madefrom {
+    font-size: 7px;
+    line-height: 30px;
+}
+
+.letsconnect {
+    line-height: 20px;
 }
 
 .footer_grid {
@@ -87,174 +108,177 @@ footer p {
     grid-row: span 4;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    padding: 0px 100px 0px 100px;
+    padding: 0px 50px 0px 50px;
     color: rgb(251, 247, 239);
+}
+
+.leftfooter a:link{
+    text-decoration: none;
+    color: rgb(251, 247, 239);
+}
+
+.leftfooter a:visited {
+    text-decoration: none;
+    color: rgb(251, 247, 239);
+}
+
+.leftfooter a:hover{
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+.leftfooter a:active{
+    text-decoration: none;
+    opacity: 0.75;
 }
 
 .rightfooter {
     text-align: right;
 }
 
-/* index html/css */
+@media screen and (min-width: 800px) {
+    
+    
+    /* FOOTER STYLING */
 
-.hello_note {
-    color: #fff4d9;
-    /* border: pink solid 5px; */
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Mukta;
+    footer {
+        position: relative;
+        bottom: 0;
+        margin: 0;
+        padding: 20px 0px 20px 0px;
+        background-color: #363734;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    footer h1 {
+        margin: 0;
+        color: #dce1bd;
+        font-size: 40px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 35px;
+    }
+
+    footer p {
+        font-size: 12px;
+        line-height: 5px;
+    }
+
+    .madefrom {
+        line-height: 10px;
+        font-size: 10px;;
+    }
+
+    .letsconnect {
+        line-height: 15px;
+    }
+
+    .footer_grid {
+        display: grid;
+        grid-column: span 2;
+        column-gap: 20px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        color: rgb(251, 247, 239);
+        padding: 0px 50px 0px 50px;
+    }
+
+    .leftfooter a:link{
+        text-decoration: none;
+        color: rgb(251, 247, 239);
+    }
+
+    .leftfooter a:visited {
+        text-decoration: none;
+        color: rgb(251, 247, 239);
+    }
+
+    .leftfooter a:hover{
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    .leftfooter a:active{
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    .rightfooter {
+        margin: 0;
+        text-align: right;
+    }
 }
 
-.hello_note h1{
-    font-size: 200px;
-    margin: 0 auto;
-    padding-bottom: 250px;
-    line-height: 150px;
+@media screen and (min-width: 800px) {
+    
+    
+    /* FOOTER STYLING */
+
+    footer {
+        border: #363734 solid 1px;
+        position:relative;
+        bottom: 0;
+        padding: 50px 0px 20px 0px;
+        background-color: #363734;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    footer h1 {
+        margin: 0;
+        padding: 0px 100px 0px 100px;
+        color: #dce1bd;
+        font-size: 70px;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 17px;
+        line-height: 5px;
+    }
+
+    .madefrom {
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 300;
+    }
+
+    .letsconnect {
+        line-height: 25px;
+    }
+
+    .footer_grid {
+        display: grid;
+        grid-column: span 2;
+        grid-row: span 4;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 0px 100px 0px 100px;
+        color: rgb(251, 247, 239);
+    }
+
+    .leftfooter a:link{
+        text-decoration: none;
+        color: rgb(251, 247, 239);
+    }
+
+    .leftfooter a:visited {
+        text-decoration: none;
+        color: rgb(251, 247, 239);
+    }
+
+    .leftfooter a:hover{
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    .leftfooter a:active{
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    .rightfooter {
+        text-align: right;
+    }
 }
-
-.hello_note h2{
-    font-size: 25px;
-    margin: 0 auto;
-    padding-top: 200px; 
-    letter-spacing: 16px;
-    font-family: Mukta;
-    font-weight: lighter;
-    line-height: 50px;
-}
-
-.shortintro {
-    background-color: #fff4d9;
-    font-family: Mukta;
-    padding: 10px 0px 10px 0px;
-    line-height: 30px;
-}
-
-h2 {
-    font-size: 30px;
-    color: white;
-}
-
-small {
-    font-size: 20px;
-    font-family: Mukta;
-}
-
-.indexworks_grid {
-    display: grid;
-    grid-column: span 2;
-    grid-row: span 3;
-    grid-template-columns: auto auto;
-    grid-template-rows:  auto auto auto;
-    padding: 20px 100px 0px 100px;
-    align-content: center;
-    row-gap: 30px;
-    column-gap: 30px;;
-    /* border-radius: 50px; */
-    /* border: solid purple 5px; */
-    color: #F0E6DE;
-}
-
-.indexworks_grid .index_room8, .indexworks_grid .index_playground, .indexworks_grid .index_personal {
-    background-color: rgba(203, 185, 167, 0.15);
-
-    padding: 20px 20px 0px 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: #9D8C7F 1px solid;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(12, 8, 5, 0.25);
-    font-family: Mukta;
-    text-transform: lowercase;
-    position: relative;
-}
-
-.indexworks_grid img {
-    width: 800px;
-    height: 400px;
-    align-items: center;
-    /* border-top-left-radius: 15px;
-    border-top-right-radius: 15px; */
-    border-radius: 15px;
-}
-
-.indexworks_grid h1 {
-    font-size: 45px;
-    text-align: left;
-    padding-left: 23px;
-    color: rgba(255, 244, 217, 1);
-    margin-bottom: 0;
-}
-
-.indexworks_grid h2 {
-    font-size: 25px;
-    padding-left: 23px;
-    line-height: 0px;
-    margin-top: 0;
-    padding-bottom: 45px;
-}
-
-.bottom-left {
-    position: absolute;
-    left: 5%;
-    top: 68%;
-    padding: 3px 30px 3px 30px;
-    font-size: 25px;
-    border-radius: 15px;
-    background: rgba(255, 244, 217, 1);
-    color: #A26952;
-    border: #A26952 1px solid;
-}
-
-.works-title {
-    font-size: 60px;
-    color: rgba(255, 244, 217, 1);
-    font-family: Mukta;
-    text-align: center;
-    padding: 50px 0px 0px 0px;
-}
-
-
-
-/* about html/css */
-
-.works_grid{
-    display: grid;
-    grid-column: span 2;
-    grid-row: span 3;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    padding: 0px 100px 0px 100px;
-    justify-content: center;
-}
-
-.works_grid img {
-    display: block;
-    align-self: center;
-    margin: 0 auto;
-    width: auto;
-    margin: 0 auto;
-}
-
-.works_room8 h1, .works_playground h1, .works_personal h1 {
-    font-size: 35px;
-    text-align: auto;
-    padding: 0px 120px 0px 120px;
-}
-
-.works_room8 h2, .works_playground h2, .works_personal h2 {
-    font-size: 17px;
-    text-align: auto;
-    padding: 0px 120px 50px 120px;
-    text-decoration: underline;
-}
-
-.works_room8 p, .works_playground p, .works_personal p {
-    font-size: 20px;
-    text-align: justify;
-    padding: 0px 120px 0px 120px;
-}
-
-/* @media screen and (min-width: 800px) {
-
-} */
