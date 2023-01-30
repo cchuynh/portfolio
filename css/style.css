@@ -121,7 +121,7 @@ small {
 
 /* works */
 
-.index_room8, .index_playground, .index_personal {
+.index_room8, .index_playground, .index_personal, .index_uichallenge {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto;
@@ -144,7 +144,13 @@ small {
     background: #c4e4db;
 }
 
-.index_room8 img, .index_playground img, .index_personal img {
+.index_uichallenge {
+    background: #F9FBE9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.index_room8 img, .index_playground img, .index_personal img, .index_uichallenge img{
     max-width: 100%;
     height: auto;
     border-radius: 20px;
@@ -382,7 +388,7 @@ footer p {
 
     /* works */
 
-    .index_room8, .index_playground, .index_personal {
+    .index_room8, .index_playground, .index_personal .index_uichallenge {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: auto;
@@ -391,7 +397,7 @@ footer p {
         color: #363734;
     }
 
-    .index_room8 {
+    .index_room8 .index_uichallenge{
         background: #F9FBE9;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 400;
@@ -405,7 +411,7 @@ footer p {
         background: #c4e4db;
     }
 
-    .index_room8 img, .index_playground img, .index_personal img {
+    .index_room8 img, .index_playground img, .index_personal img, .index_uichallenge img{
         max-width: 100%;
         height: auto;
         border-radius: 20px;
@@ -646,7 +652,7 @@ footer p {
 
     /* works */
 
-    .index_room8, .index_playground, .index_personal {
+    .index_room8, .index_playground, .index_personal, .index_uichallenge {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: auto;
@@ -655,7 +661,7 @@ footer p {
         color: #363734;
     }
 
-    .index_room8 {
+    .index_room8, .index_uichallenge {
         background: #F9FBE9;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 400;
@@ -669,7 +675,7 @@ footer p {
         background: #c4e4db;
     }
 
-    .index_room8 img, .index_playground img, .index_personal img {
+    .index_room8 img, .index_playground img, .index_personal img, .index_uichallenge img {
         max-width: 100%;
         height: auto;
         border-radius: 20px;
