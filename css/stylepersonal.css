@@ -88,7 +88,7 @@ footer p {
     height: auto;
 }
 
-/* room8 intro section */
+/* personal intro section */
 .personal-intro {
     display: grid;
     grid-column: span 2;
@@ -148,7 +148,7 @@ p {
 }
 
 /* slides + info */
-.room8-slides img{
+.personal-slides img{
     max-width: 75%;
     height: auto;
     display: block;
@@ -205,7 +205,7 @@ p {
     }
     
     /* slides + info */
-    .room8-slides img{
+    .personal-slides img{
         max-width: 65%;
         height: auto;
         display: block;
