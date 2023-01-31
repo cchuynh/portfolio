@@ -93,7 +93,7 @@ h1 {
 .logoimg {
     max-width: 20%;
     height: auto;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .topimg {
@@ -614,6 +614,7 @@ footer p {
     }
 
     .logoimg {
+        max-width: 15%;
         padding-left: 200px;
     }
 
