@@ -388,7 +388,7 @@ footer p {
 
     /* works */
 
-    .index_room8, .index_playground, .index_personal .index_uichallenge {
+    .index_room8, .index_playground, .index_personal, .index_uichallenge {
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-template-rows: auto;
