@@ -6,23 +6,70 @@ body{
     box-sizing: border-box;
 }
 
-a:link{
+nav * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* NAV STYLING */
+nav {
+    height: auto;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-right: 5px;
+    color: #363734;
+    /* text-transform: uppercase; */
+}
+
+.logoimg {
+    margin: 0;
+    /* border: #363734 solid 5px; */
+    padding: 0;
+    max-width: 20%;
+    height: auto;
+    padding-left: 20px;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+.UMSI_link:link, .Ross_link:link{
     text-decoration: none;
     color: #60663d;
 }
 
-a:visited {
+.UMSI_link:visited, .Ross_link:visited {
     text-decoration: none;
     color: #60663d;
 }
 
-a:hover{
+.UMSI_link:hover, .Ross_link:hover{
     text-decoration: none;
     opacity: 0.75;
     transform: scale(1.010);
 }
 
-a:active{
+.UMSI_link:active, .Ross_link:active{
     text-decoration: none;
     opacity: 0.75;
 }
@@ -38,14 +85,14 @@ h1 {
     grid-template-columns: 3fr 2fr;
     padding-left: 30px;
     padding-bottom: 30px;
-    column-gap: 5px;
+    column-gap: 30px;
 }
 
 .about-grid img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     float: center;
-    box-shadow: 2px 2px 5px #363734;
+    /* box-shadow: 2px 2px 5px #363734; */
 }
 
 .container p {
@@ -169,32 +216,64 @@ footer p {
 }
 
 @media screen and (min-width: 800px) {
+    /* NAV STYLING */
+    nav {
+        height: auto;
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 100px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 120px;
+        margin: 0 5px;
+    }
+
+    nav ul li a {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding-right: 15px;
+        /* text-transform: uppercase; */
+    }
+
+    .logoimg {
+        max-width: 15%;
+        height: auto;
+    }
+
     h1 {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         padding: 20px 0px 0px 0px;
-        line-height: 20px;
+        line-height: 30px;
     }
     
     .about-grid {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        padding-left: 100px;
+        padding-left: 50px;
         padding-bottom: 30px;
         column-gap: 20px;
     }
     
     .about-grid img {
-        max-width: 90%;
+        max-width: 70%;
         height: auto;
         float: center;
+        padding-left: 100px;
     }
     
     .container p {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 400;
         font-size: 20px;
-        padding-right: 100px;
+        padding-right: 20px;
     }
     
     .professional-intro {
@@ -312,6 +391,35 @@ footer p {
 }
 
 @media screen and (min-width: 1250px) {
+    /* NAV STYLING */
+    nav {
+        padding-right: 50px;
+    }
+
+    .logoimg {
+        margin: 0;
+        /* border: #363734 solid 5px; */
+        padding: 0;
+        max-width: 10%;
+        height: auto;
+    }
+
+    nav ul {
+        float: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding-right: 5px;
+        /* text-transform: uppercase; */
+    }
+
     h1 {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 60px;
@@ -322,14 +430,12 @@ footer p {
     .about-grid {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        padding-left: 200px;
         padding-bottom: 30px;
     }
     
     .about-grid img {
-        max-width: 90%;
+        max-width: 40%;
         height: auto;
-        float: center;
     }
     
     .container p {
