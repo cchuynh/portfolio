@@ -13,8 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
         <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/stylepersonal.css">
+        <link rel="stylesheet" type="text/css" href="css/styleabout.css">
+        <link rel="stylesheet" type="text/css" href="css/styleplayground.css">
     </head>
     <body> 
         <!-- <div class="skip"><a href= '#main'>Skip to Main Content</a></div> -->
@@ -31,49 +31,47 @@
             </nav>
         </header>
         <main class="container" id="main">
-            <div>
-                <img class = "personal-topimg" src = "images/personal-cover2.png" alt="frontlogo">
-                <div class = "personal-intro">
-                    <div class = "personal-leftside">
-                        <h1>Imagining a Personal Brand</h1>
-                        <p class = "undertitle">You are currently on the website!</p>
-                        <br>
-                        <h2>ROLE</h2>
-                        <p class="roleinfo">UX Designer & Web Developer</p>
-                        <h2>DURATION</h2>
-                        <p class="durationinfo">January 2022 - Ongoing</p>
-                        <h2>TOOLS</h2>
-                        <p class="toolsinfo">Adobe Illustrator & Photoshop, Figma, Visual Studio (HTML + CSS)</p>
-                    </div>
-                    <div class = "personal-rightside">
-                        <h2>CHALLENGE:</h2>
-                        <p>Designing a brand and web space to highlight and showcase my portfolio to a large online audience</p>
-                        <h2>SOLUTION:</h2>
-                        <p>Combined HTML and CSS skills and graphic design aspects to develop a detailed-oriented portfolio from an interactive Figma prototype</p>
-                    </div>
-                </div>
-                <div class = "personal-slides">
-                    <img src = "images/personal-1.png" alt="personal-pg1">
-                    <img src = "images/personal-2.png" alt="personal-pg2">
-                    <img src = "images/personal-3.png" alt="personal-pg3">
-                    <img src = "images/personal-4.png" alt="personal-pg4">
-                    <img src = "images/personal-5.png" alt="personal-pg5">
-                    <img src = "images/personal-6.png" alt="personal-pg6">
-                    <img src = "images/personal-7.png" alt="personal-pg7">
-                    <img src = "images/personal-8.png" alt="personal-pg8">
-                    <img src = "images/personal-9.png" alt="personal-pg9">
-                    <img src = "images/personal-10.png" alt="personal-pg10">
-                </div>
+            <div class="full-img" id="fullImgBox">
+                <img src="images/room8-cover.png" id="fullImg" alt="Nature">
+                <span onclick="closeFullImg()">X</span>
             </div>
+            
+            <div class="gallery">
+                <img src="images/pridemonth-1.JPG" alt="1" onclick="openFullImg(this.src)">
+                <img src="images/acespiritmonth.JPG" alt="2" onclick="openFullImg(this.src)">
+                <img src="images/tailgate-vertical.JPG" alt="3" onclick="openFullImg(this.src)">
+                <img src="images/signup.JPG" alt="4" onclick="openFullImg(this.src)">
+                <img src="images/president-reveal.jpg" alt="5" onclick="openFullImg(this.src)">
+                <img src="images/dvnticket.jpg" alt="6" onclick="openFullImg(this.src)">
+                <img src="images/dvnpromo.JPG" alt="7" onclick="openFullImg(this.src)">
+                <img src="images/med-1.JPG" alt="8" onclick="openFullImg(this.src)">
+                <img src="images/meetngreet-vertical.JPG" alt="9" onclick="openFullImg(this.src)">
+                <img src="images/interns.jpg" alt="10" onclick="openFullImg(this.src)">
+                <img src="images/sweetsoiree-1.JPG" alt="11" onclick="openFullImg(this.src)">
+            </div>
+            
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg")
 
-            </div>
+            function openFullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closeFullImg(pic){
+                fullImgBox.style.display = "none";
+            }
+        </script>
+
+        
         </main>
         <footer>
             <h1>Thanks for stopping by!</h1>
             <div class = "footer_grid">
                 <div class = "leftfooter">
                     <p><span style ="font-weight: 700">don't be shy! </span></p>
-                    <p><a href="index.html#gotoworks"><span style="color: #F9F2EE;"></span>explore work</a></p>
+                    <p><a href="#gotoworks"><span style="color: #F9F2EE;"></span>explore work</a></p>
                     <p><a href="about.html"><span style="color: #F9F2EE;"></span>get to know me</a></p>
                     <p><a href="resume.html"><span style="color: #F9F2EE;"></span>view resume</a></p>
                     <p class = "madefrom">made from scratch with love & care by cecilia huynh</p>

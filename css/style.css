@@ -93,8 +93,8 @@ h1 {
     display: flex;
     align-items: flex-end;
     margin-bottom: 5px;
-    font-size: 20px;
-    line-height: 10px;
+    font-size: 17px;
+    line-height: 12px;
 }
 
 .hithere > div:nth-of-type(2) {
@@ -123,8 +123,8 @@ h1 {
 
 .introaboutme h2 {
     font-weight: 300;
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 13px;
 }
 
 .introaboutme p {
