@@ -10,6 +10,15 @@ body{
     overflow: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#gotoworks {
+    height: auto;
+    max-width: 100%;
+}
+
 
 /* NAVIGATION MENU STYLING */
 

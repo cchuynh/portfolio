@@ -120,6 +120,7 @@ footer p {
 .personal-topimg {
     max-width: 100%;
     height: auto;
+    padding-bottom: 50px;
 }
 
 /* personal intro section */
@@ -266,7 +267,7 @@ p {
     
     /* slides + info */
     .personal-slides img{
-        max-width: 65%;
+        max-width: 40%;
         height: auto;
         display: block;
         margin-left: auto;

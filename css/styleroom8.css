@@ -122,8 +122,9 @@ footer p {
 }
 
 .room8-topimg {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 /* room8 intro section */
@@ -273,7 +274,7 @@ p {
     
     /* slides + info */
     .room8-slides img{
-        max-width: 65%;
+        max-width: 40%;
         height: auto;
         display: block;
         margin-left: auto;
