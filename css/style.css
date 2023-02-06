@@ -19,7 +19,6 @@ html {
     max-width: 100%;
 }
 
-
 /* NAVIGATION MENU STYLING */
 
 header::after {
@@ -220,6 +219,11 @@ h3 {
     font-weight: 500;
     color: rgb(77, 128, 237);
     letter-spacing: 0.5px;
+}
+
+.index_uichallenge img{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 }
 
 /* FOOTER STYLING */

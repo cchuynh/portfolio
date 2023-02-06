@@ -89,7 +89,7 @@ h1 {
 }
 
 .about-grid img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     float: center;
     /* box-shadow: 2px 2px 5px #363734; */
@@ -263,10 +263,9 @@ footer p {
     }
     
     .about-grid img {
-        max-width: 70%;
+        max-width: 100%;
         height: auto;
         float: center;
-        padding-left: 100px;
     }
     
     .container p {
@@ -434,7 +433,7 @@ footer p {
     }
     
     .about-grid img {
-        max-width: 40%;
+        max-width: 70%;
         height: auto;
     }
     
