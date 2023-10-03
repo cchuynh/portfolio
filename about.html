@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/icon.png">
         <!-- font links -->
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'>
+
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +16,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
         <link rel="stylesheet" type="text/css" href="css/styleabout.css">
-        <link rel="icon" type="image/x-icon" href="/images/logoex.png">
+        <link rel="icon" type="image/x-icon" href="/images/wob.png">
     </head>
     <body>
         <!-- <div class="skip"><a href= '#main'>Skip to Main Content</a></div> -->
         <header>
             <nav>
-                <a href="index.html">
-                    <img class = "logoimg" href="index.html" src ="images/logoex.png" alt="logo">
-                </a>
+                <div>
+                    <a href="index.html" class = "logo">ch.</a>
+                    <img src = "images/wob.png" alt="wob" id="icon">
+                </div>
                 <ul>
                     <li><a href="index.html#gotoworks" class="works">work</a></li>
-                    <li><a href="about.html" class="about"> about</a></li>
-                    <li><a href="https://drive.google.com/file/d/1hGAjLPmOfAavyYJ8GzBhe4LC7oq4bg2j/view?usp=share_link" class = "resume">resume</a></li>
+                    <li><a href="about.html" class="about">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1hGAjLPmOfAavyYJ8GzBhe4LC7oq4bg2j/view?usp=sharing" class = "resume">resume</a></li>
                 </ul>
             </nav>
         </header>
@@ -92,24 +97,32 @@
         <br>
         </main>
         <footer>
-            <h1>Thanks for stopping by!</h1>
+            <h4>Thanks for stopping by!</h4>
             <div class = "footer_grid">
                 <div class = "leftfooter">
-                    <p><span style ="font-weight: 700">don't be shy! </span></p>
-                    <p><a href="#gotoworks"><span style="color: #F9F2EE;"></span>explore work</a></p>
-                    <p><a href="about.html"><span style="color: #F9F2EE;"></span>get to know me</a></p>
-                    <p><a href="https://drive.google.com/file/d/1WOkBOLdHgX4BnwuyNzbXsoKM1_AfnkB8/view?usp=sharing"><span style="color: #F9F2EE;"></span>view resume</a></p>
-                    <p class = "madefrom">made from scratch with love & care by cecilia huynh</p>
+                    <h5><span style ="font-weight: 700">Don't be shy! </span></h5>
+                    <p><a href="index.html#gotoworks"><span style="color: #F9F2EE;"></span>Explore work</a></p>
+                    <p><a href="about.html"><span style="color: #F9F2EE;"></span>Get to know me</a></p>
+                    <p><a href="https://drive.google.com/file/d/1u-I_ev-IIJwlw2aTOuOF7QM676BD6dae/view?usp=sharing"><span style="color: #F9F2EE;"></span>View resume</a></p>
                 </div>
                 <div class = "rightfooter">
-                    <p class = "letsconnect">
-                        <span style ="font-weight: 700">let's connect!</span><br>
+                    <h5 class = "letsconnect">
+                        <span style ="font-weight: 700">Let's connect!</span><br>
                         <a href="https://www.linkedin.com/in/cecilia-huynh/"><img src = "images/linkedinlogo.png" width="20" alt="linkedinlogo"></a>
                         <a href="mailto:cchuynh@umich.edu"><img src = "images/emaillogo.png" width="20" alt="emaillogo"></a>
-                    </p>
+                    </h5>
                 </div>
+                <p class = "madefrom">Made with love & care from scratch by cecilia huynh</p>
             </div>
         </footer>
-        <script src="js/extra.js"></script>
+        <script>
+
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+            }
+
+        </script>
     </body>
 </html>

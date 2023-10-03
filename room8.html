@@ -11,30 +11,34 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'>
+
         <!-- style sheets -->
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/styleroom8.css">
-        <link rel="icon" type="image/x-icon" href="/images/logoex.png">
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/styleworks.css">
+        <link rel="icon" type="image/x-icon" href="/images/wob.png">
     </head>
     <body>
-        <!-- <div class="skip"><a href= '#main'>Skip to Main Content</a></div> -->
         <header>
             <nav>
-                <a href="index.html">
-                    <img class = "logoimg" href="index.html" src ="images/logoex.png" alt="logo">
-                </a>
+                <div>
+                    <a href="index.html" class = "logo">ch.</a>
+                    <img src = "images/wob.png" alt="wob" id="icon">
+                </div>
                 <ul>
                     <li><a href="index.html#gotoworks" class="works">work</a></li>
-                    <li><a href="about.html" class="about"> about</a></li>
-                    <li><a href="https://drive.google.com/file/d/1hGAjLPmOfAavyYJ8GzBhe4LC7oq4bg2j/view?usp=sharing" class = "resume">resume</a></li>
+                    <li><a href="about.html" class="about">about</a></li>
+                    <li><a href="https://drive.google.com/file/d/1u-I_ev-IIJwlw2aTOuOF7QM676BD6dae/view?usp=sharing" class = "resume">resume</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container" id="main">
             <div>
-                <img class = "room8-topimg" src = "images/room8-cover2.png" alt="room8-front">
-                <div class = "room8-intro">
-                    <div class = "room8-leftside">
+                <img class = "topimg" src = "images/room8-cover2.png" alt="room8-front">
+                <div class = "works-intro">
+                    <div class = "works-leftside">
                         <h1>Room8</h1>
                         <p class = "undertitle">Project for SI 110</p>
                         <h2>ROLE</h2>
@@ -44,14 +48,14 @@
                         <h2>TOOLS</h2>
                         <p class="toolsinfo">Adobe Illustrator & Photoshop, & Figma</p>
                     </div>
-                    <div class = "room8-rightside">
+                    <div class = "works-rightside">
                         <h2>CHALLENGE:</h2>
                         <p>Designing an application that stays consistent with housing platforms and incorporate new features to condense the user's overall process </p>
                         <h2>SOLUTION:</h2>
                         <p>Combined user research and graphic design aspects to enhance the user experience and improve previous interfaces from an interactive Figma prototype</p>
                     </div>
                 </div>
-                <div class = "room8-slides">
+                <div class = "works-slides">
                     <img src = "images/room8-1.png" alt="room8-pg1">
                     <img src = "images/room8-2.png" alt="room8-pg2">
                     <img src = "images/room8-3.png" alt="room8-pg3">
@@ -73,24 +77,32 @@
             </div>
         </main>
         <footer>
-            <h1>Thanks for stopping by!</h1>
+            <h4>Thanks for stopping by!</h4>
             <div class = "footer_grid">
                 <div class = "leftfooter">
-                    <p><span style ="font-weight: 700">don't be shy! </span></p>
-                    <p><a href="#gotoworks"><span style="color: #F9F2EE;"></span>explore work</a></p>
-                    <p><a href="about.html"><span style="color: #F9F2EE;"></span>get to know me</a></p>
-                    <p><a href="https://drive.google.com/file/d/1hGAjLPmOfAavyYJ8GzBhe4LC7oq4bg2j/view?usp=sharing"><span style="color: #F9F2EE;"></span>view resume</a></p>
-                    <p class = "madefrom">made from scratch with love & care by cecilia huynh</p>
+                    <h5><span style ="font-weight: 700">Don't be shy! </span></h5>
+                    <p><a href="index.html#gotoworks"><span style="color: #F9F2EE;"></span>Explore work</a></p>
+                    <p><a href="about.html"><span style="color: #F9F2EE;"></span>Get to know me</a></p>
+                    <p><a href="https://drive.google.com/file/d/1u-I_ev-IIJwlw2aTOuOF7QM676BD6dae/view?usp=sharing"><span style="color: #F9F2EE;"></span>View resume</a></p>
                 </div>
                 <div class = "rightfooter">
-                    <p class = "letsconnect">
-                        <span style ="font-weight: 700">let's connect!</span><br>
+                    <h5 class = "letsconnect">
+                        <span style ="font-weight: 700">Let's connect!</span><br>
                         <a href="https://www.linkedin.com/in/cecilia-huynh/"><img src = "images/linkedinlogo.png" width="20" alt="linkedinlogo"></a>
                         <a href="mailto:cchuynh@umich.edu"><img src = "images/emaillogo.png" width="20" alt="emaillogo"></a>
-                    </p>
+                    </h5>
                 </div>
+                <p class = "madefrom">Made with love & care from scratch by cecilia huynh</p>
             </div>
         </footer>
-        <script src="js/extra.js"></script>
+        <script>
+
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+            }
+
+        </script>
     </body>
 </html>

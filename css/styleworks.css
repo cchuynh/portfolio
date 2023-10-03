@@ -1,0 +1,76 @@
+body{
+    font-family: "Montserrat";
+}
+
+.topimg {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+/* room8 intro section */
+
+.works-intro {
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto;
+    column-gap: 20px;
+    align-content: center;
+
+    padding: 30px 30px 30px 30px;
+}
+
+.works-intro h1 {
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.works-intro h2 {
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 0;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.works-intro p{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: italic;
+}
+
+.works-slides {
+    background-color: #F8F2EE;
+}
+
+
+/* slides + info */
+.works-slides img{
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+    .works-intro {
+        padding: 75px 75px 75px 75px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .works-intro {
+        padding: 100px 100px 100px 100px;
+    }
+}
