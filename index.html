@@ -29,7 +29,15 @@
             <nav>
                 <div>
                     <a href="index.html" class = "logo">ch.</a>
-                    <img src = "images/wob.png" alt="wob" id="icon">
+                    <!-- <img src = "images/wob.png" alt="wob" id="icon"> -->
+                    <div>
+                        <input type="checkbox" id="icon">
+                        <label id="button" for="icon">
+                            <div id="knob"></div>
+                            <div id="subscribe"></div>
+                            <div id="alright"></div>
+                        </label>
+                    </div>
                 </div>
                 <ul>
                     <li><a href="index.html#gotoworks" class="works">work</a></li>
@@ -39,8 +47,8 @@
             </nav>
         </header>
         <main  class="container" id="main" >
-            <div class="landingpage" style="background-image: url(images/bg-cover.png); background-size: cover;">
-                <!-- style="background-image: url(images/bg-gradient.png); background-size: contain;" -->
+            <div class="landingpage">
+                <!-- style="background-image: url(images/bg-cover.png); background-size: cover;" -->
                 
                 <div class = "hithere">
                     <!-- <section class = "landingscreen" style = "background-image: url('images/draft.png');
@@ -48,13 +56,17 @@
                     background-position: bottom center;">  -->
                         <!-- style="background-image: url('images/bg_img.png');" -->
                         <div class="name">  
-                            <h1>Cecilia Huynh</h1>
+                            <h1>Hi, I'm Cecilia!</h1>
                         </div>
                         <div class="major">  
-                            <h2>UX Design + Business @&nbsp;University of Michigan</h2>
+                            <h2>Channeling fast failing, curiosity, and attentiveness to craft digital memories. Previously designing 
+                                <a style="text-decoration: underline;"href="https://www.retrospectav.com/">@Retrospect</a>
+                                and
+                                <a style="text-decoration: underline;" href="https://www.uofmhealth.org/">@Michigan Medicine</a>!</h2>
                         </div>
 
-                        <br><br><br><br>
+
+                        <br><br><br>
                         <div class = scroll-banner>
                             <!-- <marquee scrollamount="12">
                                 <h2>
@@ -77,6 +89,7 @@
                     </div> -->
                 </div>
             </div>
+            <section id = "gotoworks" >
             <!-- style = "background-image: url('images/bottom_bg.png');
             background-size: cover;
             background-position: top center;"> -->
@@ -87,25 +100,9 @@
                     <!-- <small>&#x2193;     &#x2193;      &#x2193;</small> -->
                     </span>
                 </div>
-                <section id = "gotoworks" >
+                
             <br><br><br>
                 <div class = "indexworks_grid">
-
-                    <!-- uber row -->
-                    <div class = "uber-box">
-                        <a href="uber.html" class="uber-html">
-                            <div id="cs-img">
-                                <img src = "uberimgs/uber-cover.png" alt="uber-cover" style="max-width: 100%; border-radius: 5px;">
-                            </div>
-                            <div class="uber-text" id="cs-text">
-                                <small>PASSION PROJECT | UX DESIGN</small>
-                                <h3>Uber Tutors</h3>
-                                <p>
-                                    Community-based solution to connect college campus students and expand on academic needs
-                                </p>
-                            </div>
-                        </a>
-                    </div>
 
                     <!-- retrospect row -->
                     <div class = "retrospect-box">
@@ -118,6 +115,22 @@
                                 <h3>Retrospect</h3>
                                 <p>
                                     Building graphical interface to enhance risk analytics for self driving automobiles
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- uber row -->
+                    <div class = "uber-box">
+                        <a href="uber.html" class="uber-html">
+                            <div id="cs-img">
+                                <img src = "uberimgs/uber-cover.png" alt="uber-cover" style="max-width: 100%; border-radius: 5px;">
+                            </div>
+                            <div class="uber-text" id="cs-text">
+                                <small>PASSION PROJECT | UX DESIGN</small>
+                                <h3>Uber Tutors</h3>
+                                <p>
+                                    Community-based solution to connect college campus students and expand on academic needs
                                 </p>
                             </div>
                         </a>
