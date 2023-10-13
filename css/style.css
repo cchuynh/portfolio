@@ -3,12 +3,12 @@
     --primary-color: #d3d9bf;
     --secondary-color: #9ba37d;
     --tertiary-color: #60663d;
-    --quanternary-color: rgb(60, 60, 60);
+    --quanternary-color: rgb(45,45,45);
     
 }
 
 .dark-theme {
-    --main-bg-color: rgb(60, 60, 60);
+    --main-bg-color:  rgb(45,45,45);
     --primary-color: #60663d;
     --secondary-color: #9ba37d;
     --tertiary-color: #d3d9bf;
@@ -16,13 +16,13 @@
 }
 
 #icon {
-    width: 30px;
+    width: 20px;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 body{
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,22 +60,25 @@ html {
 .logo {
     font-size: 25px;
     font-weight: 600;
-    color: #60663d;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
 nav {
+    z-index: 1;
     font-size: 15px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(248, 242, 238, 0.9);
+    /* background-color: rgb(248, 242, 238, 0.9); */
+    background-color: var(--main-bg-color);
     position: fixed;
     top: 0;
     padding: 25px 30px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
     /* box-shadow: 0 20px 30px rgba(var(--quanternary-color), 0.15); */
+    /* border: 4px red solid; */
 }
 
 ul {
@@ -89,8 +92,8 @@ li {
 }
 
 li a {
-    margin-left: 5px;
-    color:#60663d;
+    margin-left: 20px;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -111,8 +114,9 @@ body {
 } */
 
 .hithere {
-    margin-top: 150px;
-    padding: 150px 30px 30px 30px;
+    margin-top: 110px;
+    padding: 100px 30px 60px 30px;
+    /* background: linear-gradient(0deg, var(--main-bg-color), var(--primary-color)); */
 }
 
 h1{
@@ -126,8 +130,8 @@ h1{
 
 h2 {
     margin: 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
     color: var(--tertiary-color);
 }
 
@@ -221,7 +225,7 @@ footer {
     position: relative;
     bottom: 0;
     padding: 30px;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(45, 45, 45);
     font-weight: 350;
 }
 
@@ -270,6 +274,7 @@ footer p {
     row-gap: 10px;
 }
 
+
 .leftfooter a:link{
     text-decoration: none;
     color: #F8F2EE;
@@ -289,6 +294,52 @@ footer p {
     text-decoration: none;
     opacity: 0.75;
 }
+
+/* wob toggle*/
+
+
+input[type="checkbox"] {
+    display: none;
+}
+  
+#button {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    cursor: pointer;
+    transform: scale(0.4);
+    margin-top: -50px;
+    margin-left: 10px;
+}
+  
+#knob {
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/oop1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: var(--primary-color); */
+    position: relative;
+    top: 0px;
+    left: 5px;
+    border-radius: 50px;
+    transition: 0.4s ease left, 0.4s ease background-position;
+    z-index: 2;
+}
+  
+#icon:checked + #button #knob {
+    left: 80px;
+    background-position: -70px 0;
+}
+
+#icon:checked + #button {
+    background-color: var(--quanternary-color);
+}
+
+
 
 @media screen and (min-width: 800px) {
     /* NAVIGATION MENU STYLING */
@@ -318,12 +369,13 @@ footer p {
 
     h1{
         padding: 90px 75px 0px 75px;
-        font-size: 55px;
+        font-size: 50px;
+        margin-bottom: 60px;
     }
 
     h2 {
         padding: 0px 75px 70px 75px;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     /* works */
@@ -410,12 +462,13 @@ footer p {
 
     h1{
         padding: 100px 100px 0px 100px;
-        font-size: 80px;
+        font-size: 60px;
+        margin-bottom: 40px;
     }
 
     h2 {
         padding: 0px 100px 80px 100px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     /* works */

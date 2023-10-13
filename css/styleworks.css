@@ -28,7 +28,7 @@ body{
     margin: 0;
 
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
 }
 
@@ -38,7 +38,7 @@ body{
 
     margin-bottom: 0;
     line-height: 35px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     padding-top: 20px;
 }
@@ -47,6 +47,7 @@ body{
     font-family: "Montserrat";
     font-weight: 400;
     font-style: italic;
+    /* font-size: 14px; */
 }
 
 .works-slides {
@@ -56,7 +57,7 @@ body{
 
 /* slides + info */
 .works-slides img{
-    max-width: 75%;
+    width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -67,10 +68,18 @@ body{
     .works-intro {
         padding: 75px 75px 75px 75px;
     }
+
+    .works-slides img{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width: 1250px) {
     .works-intro {
         padding: 100px 100px 100px 100px;
+    }
+
+    .works-slides img{
+        width: 70%;
     }
 }
