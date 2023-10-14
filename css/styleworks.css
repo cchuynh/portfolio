@@ -64,6 +64,25 @@ body{
     margin-right: auto;
 }
 
+/* little projects styling */
+
+.littleprojects-style p{
+    margin: 30px 35px;
+}
+
+.littleprojects-style h1{
+    margin: 10px 35px;
+}
+
+.littleprojects-grid {
+    margin: 10px 35px;
+}
+
+.littleprojects-grid img {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (min-width: 800px) {
     .works-intro {
         padding: 75px 75px 75px 75px;
