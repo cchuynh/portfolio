@@ -30,9 +30,9 @@ body{
     font-family: "Montserrat"
 }
 
-#main {
+/* #main {
     overflow: hidden;
-}
+} */
 
 *, *:before, *:after {
     padding: 0;

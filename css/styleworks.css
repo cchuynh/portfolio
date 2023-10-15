@@ -54,6 +54,10 @@ body{
     background-color: #F8F2EE;
 }
 
+.progress {
+    visibility: hidden;
+}
+
 
 /* slides + info */
 .works-slides img{
@@ -67,11 +71,17 @@ body{
 /* little projects styling */
 
 .littleprojects-style p{
+    color: var(--quanternary-color);
     margin: 30px 35px;
 }
 
 .littleprojects-style h1{
     margin: 10px 35px;
+    color: var(--secondary-color);
+}
+
+.littleprojects-style span {
+    color: var(--quanternary-color)
 }
 
 .littleprojects-grid {
@@ -82,6 +92,7 @@ body{
     width: 100%;
     height: auto;
 }
+
 
 @media screen and (min-width: 800px) {
     .works-intro {
@@ -101,4 +112,55 @@ body{
     .works-slides img{
         width: 70%;
     }
+
+    /* .gifs {
+        width: 20%;
+    } */
+
+
+    *{
+        transition: all.2s ease-out;
+    }
+      
+    html{
+        scroll-behavior: smooth;
+    }
+      
+      /* MENU START HERE */
+      
+      .progress{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20%;
+        visibility: visible;
+      }
+      
+      .progress ul{
+        list-style: none;
+        height: 150px;
+        display: flex;
+        align-items: left;
+        justify-content: space-around;
+        flex-flow: column;
+        position: relative;
+      }
+      
+      .progress ul li{
+        z-index: 1;
+        margin-top: 5px;
+        margin-left: 75px;
+      }
+      
+      .progress ul li a{
+        text-decoration: none;
+        width: 80%;
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--quanternary-color), ;
+      }
+      
+      .progress ul li a:hover{
+        color: rgba(33,28,25,1);
+      }
+      
 }
