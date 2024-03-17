@@ -1,0 +1,350 @@
+/* <!-- <section class="playgroundpanel">
+                <div class="general-container" id="#playgroundpanel">
+                    <input class="radio" type="radio" name="card" id="card-1" checked />
+                    <label class="content" for="card-1" >
+                        <span class="icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <a class="close" href="#popup1">
+                        <h3 class="card-title">
+                            Michigan Medicine 	&#x2197;<br>
+                            <span class="subtitle">UI Design</span></a>
+                        </h3>
+                    </label>
+                    <input class="radio" type="radio" name="card" id="card-2" />
+                    <label class="content" for="card-2">
+                        <span class="icon">
+                            <i class="fas fa-cloud-rain"></i>
+                        </span>
+                        <a href="personal.html" class="personal-html">
+                        <h3 class="card-title">
+                            Imagining a Personal Brand 	&#x2197;<br>
+                            <span class="subtitle">Web Design & Development</span></a>
+                        </h3>
+                    </label>
+                    <input class="radio" type="radio" name="card" id="card-3" />
+                        <label class="content" for="card-3">
+                        <span class="icon">
+                        <a href="room8.html" class="room8-html">
+                            <i class="fas fa-cloud-moon"></i>
+                        </span>
+                        <h3 class="card-title">
+                            Room8 &#x2197;<br>
+                            <span class="subtitle">UI/UX Design</span></a>
+                        </h3>
+                        </label>
+                    <input class="radio" type="radio" name="card" id="card-4" />
+                        <label class="content" for="card-4">
+                        <span class="icon">
+                            <i class="fas fa-snowflake"></i>
+                        </span>
+                        <a class="close" href="#popup2">
+                        <h3 class="card-title">
+                            Vietnamese Student Association &#x2197;<br>
+                            <span class="subtitle">Graphic Design</span></a>
+                        </h3>
+                        </label>
+                    <input class="radio" type="radio" name="card" id="card-5" />
+                        <label class="content" for="card-5">
+                        <span class="icon">
+                            <a href="littleprojects.html" class="littleprojects-html">
+                            <i class="fas fa-poo-storm"></i>
+                        </span>
+                        <h3 class="card-title">
+                            Little Projects &#x2197;<br>
+                            <span class="subtitle">UI/UX & Graphic Design</span></a>
+                        </h3>
+                        </label>
+                  </div>
+            </section> -->
+ */
+
+ /* <section class="popups">
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h3>Michigan Medicine</h3>
+                    <a class="close" href="#playgroundpanel">&times;</a>
+                    <div class="popupcontent">
+                        <p>Due to the nature of the project, I'm unable to share the Michigan Medicine case study publicly. Reach out to me to learn more about this project.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <h3>Vietnamese Student Association</h3>
+                    <a class="close" href="#playgroundpanel">&times;</a>
+                    <div class="popupcontent">
+                        <p>Served as Media Chair in 2021, Co-President in 2022, and currently Senior Advisor in 2023</p><br>
+                        <div class="vsagrid">
+                            <img src="images/pridemonth-1.JPG" alt="1" onclick="openFullImg(this.src)">
+                            <img src="images/acespiritmonth.JPG" alt="2" onclick="openFullImg(this.src)">
+                            <img src="images/signup.JPG" alt="4" onclick="openFullImg(this.src)">
+                            <img src="images/president-reveal.jpg" alt="5" onclick="openFullImg(this.src)">
+                            <img src="images/dvnpromo.JPG" alt="7" onclick="openFullImg(this.src)">
+                            <img src="images/meetngreet-vertical.JPG" alt="9" onclick="openFullImg(this.src)">
+                            <img src="images/interns.jpg" alt="10" onclick="openFullImg(this.src)">
+                            <img src="images/sweetsoiree-1.JPG" alt="11" onclick="openFullImg(this.src)">
+                            <img src="images/dvnticket.jpg" alt="6" onclick="openFullImg(this.src)">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section> */
+
+/* Popups */
+#wrapper {
+	width: 100px;
+	margin: 0 auto;
+	background: var(--main-bg-color);
+	padding: 35px;
+	border: 10px solid #aaa;
+	border-radius: 5px;
+	background-clip: padding-box;
+	text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 1100px;
+	bottom: 100;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    /* background: rgba(0,0,0,0.5); */
+	opacity: 0;
+  .cancel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.popup {
+	margin: 200px auto;
+    height: auto;
+	padding: 20px;
+	background: var(--main-bg-color);
+	border: 1px solid #666;
+	width: 90%;
+    /* margin-top: 150px; */
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	position: relative;
+    border-radius: 5px;
+  .light & {
+    border-color: #aaa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  }
+
+  .close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 20px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--quanternary-color);
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .popupcontent {
+    max-height: 400px;
+    overflow: auto;
+  }
+  p {
+    margin: 0 0 1em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.vsagrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.vsagrid img {
+    width: 100%;
+}
+
+/* wob toggle*/
+
+input[type="checkbox"] {
+    display: none;
+}
+  
+#button {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    cursor: pointer;
+    transform: scale(0.4);
+    margin-top: -50px;
+    margin-left: 0px;
+}
+  
+#knob {
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/oop1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: var(--primary-color); */
+    position: relative;
+    top: 0px;
+    left: 5px;
+    border-radius: 50px;
+    transition: 0.4s ease left, 0.4s ease background-position;
+    z-index: 2;
+}
+  
+#icon:checked + #button #knob {
+    left: 80px;
+    background-position: -70px 0;
+}
+
+#icon:checked + #button {
+    background-color: var(--quanternary-color);
+}
+
+/* Playground */
+
+.playgroundpanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 35px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.general-container {
+  display: flex;
+  height: 20rem;
+  /* margin: 20 auto; */
+  max-width: 100%;
+  width: 78rem;
+}
+
+.radio {
+  display: none;
+}
+
+.content {
+  background: var(--main-bg-color) url('/images/mm_cover.png') 50% / cover no-repeat;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 0.8rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+/* .icon {
+    align-items: center;
+    background-color: #F8F2EE;
+    border-radius: 50%;
+    bottom: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    left: 1.1rem;
+    bottom: 1.5rem;
+    position: absolute;
+    width: 2.5rem;
+} */
+
+.content:nth-of-type(2) {
+    background-image: url('/personalimg/personal-cover.png');}
+
+.content:nth-of-type(3) {
+  background-image: url('/room8img/room8-cover2.png');
+}
+
+.content:nth-of-type(4) {
+    background-image: url('/images/president-reveal.jpg');}
+
+.content:nth-of-type(5) {
+    background-image: url('/images/bg-balls.png');
+    margin-right: 0;
+}
+
+.card-title {
+    color: #F8F2EE;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+    left: 2rem;
+    bottom: 1rem;
+    line-height: 1.1;
+    opacity: 0;
+    position: absolute;
+    text-shadow: 0px 0px 10px rgba(10, 10, 10);
+    transform: translateX(2rem);
+    transition: 290ms cubic-bezier(0.05, 0.61, 0.41, 0.95) 300ms;
+    transition-property: opacity, transform;
+    user-select: none;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+    /* background-color: rgb(96, 102, 61, 0.2); */
+}
+
+.card-title a:link{
+    text-decoration: none;
+    color: #F8F2EE;
+}
+
+.card-title a:visited {
+    text-decoration: none;
+    color: #F8F2EE;
+}
+
+.card-title a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.card-title a:active{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 12px;
+}
+
+/* Effect */
+.radio:checked + .content {
+  border-radius: 5px;
+  flex: 10;
+}
+
+.radio:checked + .content > .card-title {
+  opacity: 1;
+  transform: translateX(0);
+}
+
