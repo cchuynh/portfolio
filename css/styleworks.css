@@ -4,11 +4,6 @@ body{
     margin: 25px;
 }
 
-footer {
-    margin: -25px;
-    font-family: 'Inter', sans-serif;
-}
-
 
 .space {
     height: 100px;
@@ -325,10 +320,6 @@ figcaption {
     position:relative;
 }
 
-.works footer h4{
-    color: white;
-}
-
 /* .works-slides {
     background-color: #faf8f7;
 } */
@@ -346,8 +337,6 @@ figcaption {
 .topimg-lp {
     width: 100%;
 }
-
-
 
 @media screen and (min-width: 800px) {
     .works {
@@ -432,10 +421,6 @@ figcaption {
         margin-left: 100px;
         margin-right: 100px;
     }
-
-    footer {
-        margin: -100px;
-    }
 }
 
 @media screen and (min-width: 1250px) {
@@ -451,10 +436,6 @@ figcaption {
     .littleprojects-style {
         margin-left: 200px;
         margin-right: 200px;
-    }
-
-    footer {
-        margin: -25px;
     }
       
 }

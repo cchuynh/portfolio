@@ -10,6 +10,10 @@
     /* #ac988c */
 }
 
+.works {
+    margin: 5px;
+}
+
 .dark-theme {
     --main-bg-color:  rgb(45,45,45);
     --primary-color: #60663d;
@@ -311,6 +315,10 @@ footer {
     font-family: 'Inter';
 }
 
+.works footer {
+    margin: -25px;
+}
+
 h4 {
     font-size: 24px;
     margin: 0;
@@ -603,9 +611,9 @@ footer p {
 
     /* index html/css */
 
-    nav {
+    /* nav {
         padding: 25px 75px;
-    }
+    } */
 
     .password_screens {
         padding: 75px;
@@ -769,9 +777,9 @@ footer p {
 
     /* index html/css */
 
-    nav {
+    /* nav {
         padding: 25px 100px;
-    }
+    } */
 
     .landingpage {
         padding: 40px 100px;
