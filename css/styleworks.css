@@ -139,13 +139,18 @@ figcaption {
 
 .listrow {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     /* background-color: rgb(251, 248, 248);  */
     background-color: white;
     border: 1px #282421 solid; 
     padding: 20px 10px;
     justify-content: center;
     align-content: center;
+    column-gap: 10px;
+}
+
+.listrowicons img{
+    width: 40%;
 }
 
 .smalllist {
@@ -231,7 +236,7 @@ figcaption {
 
 .stats-numbers{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr;
     background-color: white; 
     /* border: 1px black solid;  */
     border-radius: 0px 0px 5px 5px;
@@ -337,6 +342,14 @@ figcaption {
 .topimg-lp {
     width: 100%;
 }
+
+.joinluprototype {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px #282421 solid; 
+}
+
+
 
 @media screen and (min-width: 800px) {
     .works {
