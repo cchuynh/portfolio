@@ -532,7 +532,7 @@ footer p {
 
 #spin:after {
     content:"";
-    animation: spin 30s linear infinite;
+    animation: spin 12.5s linear infinite;
     /* line-height: 0px; */
 }
   
@@ -565,7 +565,7 @@ footer p {
     70% { content: "sings the alphabet backwards";}
     80% { content: "color codes all her files";}
     /* 90% { content: "bakes banana bread weekly";} */
-    90% { content: "grows sourdough starter";}
+    90% { content: "bakes sourdough bread";}
     100% { content: "takes sandwiches apart";}
 }
   
