@@ -1,77 +1,9 @@
-body {
-    color: #282421;
+.about-page h2{
+  margin: 30px 30px;
 }
 
-a:hover {
-    opacity: 80%;
-}
-
-.UMSI_link:link, .Ross_link:link{
-    text-decoration: none;
-    color: #9ba37d;
-}
-
-.UMSI_link:visited, .Ross_link:visited {
-    text-decoration: none;
-    color: #9ba37d;
-}
-
-.UMSI_link:hover, .Ross_link:hover{
-    text-decoration: none;
-    opacity: 0.75;
-    transform: scale(1.010);
-}
-
-.UMSI_link:active, .Ross_link:active{
-    text-decoration: none;
-    opacity: 0.75;
-}
-
-h1 {
-    /* font-size: 20px; */
-    text-align: left;
-    margin: 20px 0;
-}
-
-p {
-    font-size: 14px;
-}
-
-.team {
-    margin: 0px -22px;
-}
-
-.about1 {
-    padding: 50px 25px 75px 25px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.about2 {
-    /* border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px; */
-    margin-top: -75px;
-    background-color: #f1ecde;
-    padding: 50px 25px 75px 25px;
-}
-
-.about3 {
-    padding: 50px 25px 75px 25px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-top: -75px;
-    margin-bottom: -200px;
-    border-bottom: 0px;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #faf8f7;
-}
-
-footer {
-    margin: 0;
+.about-page p, .game p {
+  margin: 10px 30px;
 }
 
 .about-img {
@@ -81,48 +13,148 @@ footer {
     background-color: #f1ecde;
 }
 
-@media screen and (min-width: 800px) {
-    .about1 {
-        padding-left: 75px;
-        padding-right: 75px;
-    }
-
-    .addin {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .about-img {
-        padding: 25px 80px;
-    }
-    
+.about-page {
+  margin-bottom: 80px;
 }
 
-@media screen and (min-width: 1250px) {
-    .about1 {
-        padding-left: 275px;
-        padding-right: 275px;
-    }
+.about-page, .faq-section, .team, .game {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform; 
+}
 
-    .about2 {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+.about-page.show, .faq-section.show, .team.show, .game.show {
+    opacity: 1;
+    transform: scale(1);
+}
 
-    .addin {
-        padding-left: 175px;
-        padding-right: 175px;
-    }
+.faq-section h2 {
+    margin: 0;
+}
 
-    p {
-        font-size: 16px;
-    }
-    
-    .about-img {
-        padding: 25px 275px;
-    }
+.faq-section {
+    width: 100%;
+    /* max-width: 768px; */
+    margin: 0 auto;
+    padding: 80px 30px;
+    background-color: var(--neutral-200);
+  }
+  
+.faq-item {
+    border-bottom: 1px solid var(--neutral-300);
+    padding: 16px 0;
+  }
+  
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: var(--font-style);
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    color: var(--neutral-400);
+  }
+  
+.faq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+.faq-title {
+    font-size: var(--text-14px-p);
+    font-weight: 500;
+    color: var(--neutral-400);
+  }
+  
+.faq-question .icon {
+    font-size: 20px;
+    color: var(--neutral-300);
+    margin-left: 16px;
+    flex-shrink: 0;
+  }
+  
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    font-size: var(--text-14px-p);
+    color: var(--neutral-350);
+    padding-top: 0;
+    padding-right: 24px;
+  }
+  
+.faq-answer.open {
+    max-height: 1000px;
+    padding-top: 12px;
+    margin-right: 0  }
+  
+.faq-answer p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    margin-left: 0;
+  }
+  
+@media (min-width: 800px) {
+
+  .about-page h2 {
+    margin: 30px 120px;
+  }
+
+  .about-page {
+    padding: 120px 0;
+  }
+
+  .faq-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-question .icon {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .about-page p, .game p {
+    margin: 0 120px;
+  }
+
+  .faq-title {
+    font-size: var(--text-18px-h);
+  }
+
+  .faq-section {
+    padding: 120px;
+  }
+
+  .team, .game {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  
+  .team-grid {
+    margin: 0 240px;
+  }
+
+  .about-page h2, h2 {
+    margin: 30px 240px;
+  }
+
+  .about-page p, .game p {
+    margin: 0 240px;
+  }
+
+  .faq-section {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+
+  .faq-title {
+    font-size: var(--text-18px-h)
+  }
 }
