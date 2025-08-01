@@ -430,7 +430,7 @@ iframe {
     }
     
     .case-study > div:not(.main-point):not(.dark-point) {
-        margin: 0 150px;
+        margin: 100px 150px;
     }
     
     small.works-small {
@@ -438,7 +438,7 @@ iframe {
     }
 
     .main-point-text, .dark-point-text {
-        margin: 0 150px;
+        margin: 100px 150px;
     }
 
     h2 {
@@ -526,7 +526,7 @@ iframe {
     }
     
     .case-study > div:not(.main-point):not(.dark-point) {
-        margin: 0 300px;
+        margin: 100px 300px;
     }
     
     small.works-small {
@@ -534,7 +534,7 @@ iframe {
     }
     
     .main-point-text, .dark-point-text {
-        margin: 0 300px;
+        margin: 100px 300px;
     }
     
     iframe {
